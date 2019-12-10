@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webRTC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logoPic">
+                <h3>Chat</h3>
+            </div>
+        </div>
+        <div class="content">
+            <div class="videoBarWrapper">
+                <div class="video">
+                    <video id="localVideo" autoplay playsinline></video>
+                    <video id="remoteVideo" autoplay playsinline></video>
+                </div>
+                <div>
+                    <button class="HangUpButton" type="button">Hang Up</button>
+                </div>
+            </div>
+            <div class="messageBox">
+                <input type="text" name="name" id="nick-name" placeholder="Enter your nickname here:" class="form-control">
+                <div id="messForm">
+                    <textarea name="message" id="message_input" class="form-control" placeholder="Enter your message:"></textarea>
+                    <button id="send_Button" class="sendMessageButton" type="button">Send</button>
+                </div>
+                <div class="showMessage">
+                    <div id="chat_log">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src='js/chat.js'></script>
+</body>
+
+</html>

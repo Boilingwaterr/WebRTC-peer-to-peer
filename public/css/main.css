@@ -1,0 +1,142 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: #19181C;
+    color: #121212;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    cursor: pointer;
+    display: flex;
+    grid-column: span 12;
+    grid-row: span 1;
+    background: #131315;
+}
+
+.logoPic {
+    color: #fff;
+    margin-left: 20px;
+}
+
+.logoPic h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    height: 100vh;
+    justify-content: center;
+    align-self: center;
+}
+
+.videoBarWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+video {
+    max-width: 100%;
+    width: 320px;
+}
+
+button {
+    background: #dc3545;
+    display: flex-inline;
+    font-weight: 400;
+    color: #d8c8c8;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.video {
+    justify-content: space-between;
+    position: relative;
+    display: flex;
+}
+
+.messageBox {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+}
+
+#messForm {
+    display: flex;
+    margin-bottom: 1px;
+}
+
+#message_input {
+    resize: none;
+}
+
+#message__info {
+    display: inline-flex;
+    min-width: 100%;
+}
+
+#all_mess {
+    background: rgb(42, 41, 46);
+    min-height: 190px;
+    border-radius: 5px;
+}
+
+#nick-name {
+    position: relative;
+    display: flex;
+}
+
+#chat_log {
+    color: #fff;
+    min-height: 300px;
+    max-height: 400px;
+    display: block;
+    overflow-y: scroll;
+}
+
+#chat_log::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+
+#chat_log::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#chat_log::-webkit-scrollbar-track:hover {
+    border-left: solid 1px #aaa;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+#userMessage {
+    display: flex;
+    padding-left: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    min-width: calc(100% - 40px);
+    align-items: center;
+}
