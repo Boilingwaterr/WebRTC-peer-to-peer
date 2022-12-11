@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "WebRTC p2p",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node-static": "^0.7.10",
     "socket.io": "^2.0.4"
   }
